@@ -1,7 +1,8 @@
 const fruits = require("../fruits.json")
 
+
 class Fruit {
-  constructor({ genus, name, id, family, order, nutritions }) {
+  constructor({ genus, name, id, family, order, nutritions }) { //special method that creates object
     this.genus = genus
     this.name = name
     this.id = id
@@ -10,7 +11,7 @@ class Fruit {
     this.nutritions = nutritions
   }
 
-  static showAll = () => {
+  static showAll = () => { //methods that the class of fruit has
     return fruits.map((fruit) => new Fruit(fruit))
   }
 
